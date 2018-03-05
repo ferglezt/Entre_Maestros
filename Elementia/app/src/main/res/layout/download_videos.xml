@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtonBlue"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/video"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/videos"
+            android:textColor="@color/colorEdit"
+            android:textStyle="bold"
+            android:textSize="@dimen/titleTextSize"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/download_manuel_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:alpha="0.9"
+                android:backgroundTint="@color/colorButtonBlue"
+                android:paddingLeft="@dimen/paddingBtnMenu"
+                android:text="Video 1"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorEdit"
+                android:textSize="@dimen/textButtonSize" />
+            <ImageView
+                android:layout_width="@dimen/icWidthMenu"
+                android:layout_height="@dimen/icHeigthMenu"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="@dimen/imagePaddingMenu"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/videos"
+                android:elevation="8dp"
+                android:layout_alignLeft="@id/download_manuel_1"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/imageMargingMenu"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/download_manuel_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:alpha="0.9"
+                android:backgroundTint="@color/colorButtonBlue"
+                android:paddingLeft="@dimen/paddingBtnMenu"
+                android:text="Video 2"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorEdit"
+                android:textSize="@dimen/textButtonSize" />
+            <ImageView
+                android:layout_width="@dimen/icWidthMenu"
+                android:layout_height="@dimen/icHeigthMenu"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="@dimen/imagePaddingMenu"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/videos"
+                android:elevation="8dp"
+                android:layout_alignLeft="@id/download_manuel_2"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/imageMargingMenu"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/download_manuel_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:alpha="0.9"
+                android:backgroundTint="@color/colorButtonBlue"
+                android:paddingLeft="@dimen/paddingBtnMenu"
+                android:text="Video 3"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorEdit"
+                android:textSize="@dimen/textButtonSize" />
+            <ImageView
+                android:layout_width="@dimen/icWidthMenu"
+                android:layout_height="@dimen/icHeigthMenu"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="@dimen/imagePaddingMenu"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/videos"
+                android:elevation="8dp"
+                android:layout_alignLeft="@id/download_manuel_3"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/imageMargingMenu"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/download_manuel_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:alpha="0.9"
+                android:backgroundTint="@color/colorButtonBlue"
+                android:paddingLeft="@dimen/paddingBtnMenu"
+                android:text="Video 4"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorEdit"
+                android:textSize="@dimen/textButtonSize" />
+            <ImageView
+                android:layout_width="@dimen/icWidthMenu"
+                android:layout_height="@dimen/icHeigthMenu"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="@dimen/imagePaddingMenu"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/videos"
+                android:elevation="8dp"
+                android:layout_alignLeft="@id/download_manuel_4"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/imageMargingMenu"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/download_manuel_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:alpha="0.9"
+                android:backgroundTint="@color/colorButtonBlue"
+                android:paddingLeft="@dimen/paddingBtnMenu"
+                android:text="Video 5"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorEdit"
+                android:textSize="@dimen/textButtonSize" />
+            <ImageView
+                android:layout_width="@dimen/icWidthMenu"
+                android:layout_height="@dimen/icHeigthMenu"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="@dimen/imagePaddingMenu"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/videos"
+                android:elevation="8dp"
+                android:layout_alignLeft="@id/download_manuel_5"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/imageMargingMenu"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

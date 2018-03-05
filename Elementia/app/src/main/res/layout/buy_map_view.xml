@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:background="@android:color/transparent">
+
+        <ImageButton
+            android:id="@+id/profile_btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/menu" />
+
+        <ImageView
+            android:layout_width="@dimen/imageBarWidth"
+            android:layout_height="@dimen/imageBarHeight"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/entremaestros_horizontal" />
+
+        <ImageButton
+            android:id="@+id/profile_btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/help_circle" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtonBlue"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/tienda" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:text="Tienda 1"
+            android:textColor="@color/colorEdit"
+            android:textSize="@dimen/titleTextSize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/mapa"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:layout_marginTop="@dimen/marginVertical">
+
+                <ImageView
+                    android:id="@+id/ic_map"
+                    android:layout_width="@dimen/icWidthMenu"
+                    android:layout_height="@dimen/icHeigthMenu"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/tienda_gris" />
+
+                <TextView
+                    android:id="@+id/tittle_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginCenter"
+                    android:text="Tienda 1"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tittle_map"
+                    android:layout_marginLeft="@dimen/marginCenter"
+                    android:text="Avila Camacho 1043\nTedoskdos" />
+                <ImageView
+                    android:id="@+id/btnAddFav"
+                    android:layout_width="@dimen/icWidthMenu"
+                    android:layout_height="@dimen/icHeigthMenu"
+                    android:src="@mipmap/agregar_favoritos"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/tittle_map"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_buyFav"
+            android:layout_marginTop="@dimen/marginCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorLoginInf"
+            android:text="@string/back"
+            android:textSize="@dimen/textButtonSize"
+            android:textColor="@color/colorEdit"/>
+    </LinearLayout>
+
+</LinearLayout>

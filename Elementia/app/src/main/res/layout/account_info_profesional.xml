@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+
+            <LinearLayout
+                android:id="@+id/info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:background="@drawable/background_gray"
+                android:layout_marginHorizontal="@dimen/marginCenter">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/newUser"
+                    android:textSize="@dimen/titleTextSize"
+                    android:layout_marginVertical="@dimen/marginVertical"
+                    android:textStyle="bold"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/marginHorizontal"
+                    android:layout_marginTop="@dimen/marginVertical"
+                    android:text="@string/oficio"
+                    android:textStyle="bold"
+                    />
+
+                    <Spinner
+                        android:id="@+id/spinner_oficio"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_spinner"
+                        />
+
+                    <EditText
+                        android:id="@+id/account_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:layout_marginVertical="@dimen/marginVertical_form"
+                        android:layout_weight="1.5"
+                        android:hint="@string/expirence"
+                        android:inputType="number"
+                        android:background="@drawable/background_edittext"
+                        />
+
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/account_check_prof_albanil"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/marginHorizontal"
+                            android:text="@string/albanil" />
+
+                        <CheckBox
+                            android:id="@+id/account_check_prof_elect"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/marginHorizontal"
+                            android:text="@string/electricista" />
+
+                        <CheckBox
+                            android:id="@+id/account_check_prof_plomero"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/marginHorizontal"
+                            android:text="@string/plomero" />
+
+                        <CheckBox
+                            android:id="@+id/account_check_prof_other"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/marginHorizontal"
+                            android:text="@string/otro" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/account_check_prof_inst"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/marginHorizontal"
+                            android:text="@string/instalador" />
+
+                        <CheckBox
+                            android:id="@+id/account_check_prof_dist"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/marginHorizontal"
+                            android:text="@string/distribuidor" />
+
+                        <CheckBox
+                            android:id="@+id/account_check_prof_sub"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="@dimen/marginHorizontal"
+                            android:text="@string/subdistribuidor" />
+                    </LinearLayout>
+
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/account_certif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/marginHorizontal"
+                        android:layout_marginVertical="@dimen/margin_between_elements"
+                        android:layout_weight="2"
+                        android:hint="@string/certif"
+                        android:inputType="text"
+                        android:background="@drawable/background_edittext"
+                        />
+
+                    <Button
+                        android:id="@+id/account_btn_prof_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/marginHorizontal"
+                        android:layout_weight="1"
+                        android:text="@string/add"
+                        android:backgroundTint="@color/colorButtonOrange"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorEdit"/>
+                </LinearLayout>
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/account_prof_content_certif"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/marginVertical"
+                            android:layout_marginHorizontal="@dimen/marginHorizontal"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/marginVertical_form"/>
+                    </LinearLayout>
+                </ScrollView>
+
+                <CheckBox
+                    android:id="@+id/account_accep_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/marginHorizontal"
+                    android:text="@string/terminos"
+                    android:button="@drawable/background_checkbox"
+                    android:layout_marginVertical="@dimen/marginVertical_form"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorLoginInf"
+                    />
+            </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_gray_inf"
+    android:layout_marginHorizontal="@dimen/marginCenter"
+    android:gravity="center">
+            <Button
+                android:id="@+id/account_btn_prof_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/margin_between_elements"
+                android:text="@string/save"
+                android:paddingHorizontal="@dimen/marginCenter"
+                android:backgroundTint="@color/colorButtonOrange"
+                android:textColor="@color/colorEdit"
+                android:textStyle="bold"/>
+</LinearLayout>
+<!--
+            <Button
+                android:id="@+id/account_btn_prof_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:text="@string/back"
+                android:textColor="@color/colorEdit"
+                android:textStyle="bold"
+                android:paddingHorizontal="@dimen/marginCenter"
+                android:layout_marginTop="@dimen/marginCenter"
+                android:backgroundTint="@color/colorLoginInf"/>-->
+
+        </LinearLayout>
+
+

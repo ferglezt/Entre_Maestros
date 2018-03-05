@@ -1,0 +1,120 @@
+<resources>
+    <string name="app_name">Entre Maestros</string>
+    <string name="user">Usuario</string>
+    <string name="password">Contraseña</string>
+    <string name="logIn">Iniciar sesión</string>
+    <string name="remember">Recordarme</string>
+    <string name="helpPass">¿Olvidaste tu usuario/contraseña?</string>
+    <string name="newUser">Regístrate</string>
+    <string name="resetTitle">Recuperar contraseña</string>
+    <string name="email">Correo electronico</string>
+    <string name="enviar">Enviar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="helpUser">Para recuperar tu usuario
+        ponte en contacto con el administrador al número
+        55.5678.9867 o en el correo
+        contacto@elementia.com
+    </string>
+    <string name="name">Nombre</string>
+    <string name="ape_paterno">Apellido paterno</string>
+    <string name="ape_materno">Apellido materno</string>
+    <string name="confPassword">Confirmar contraseña</string>
+    <string name="next">Siguiente</string>
+    <string name="phone">Telefono</string>
+    <string name="birthDate">Fecha de nacimiento</string>
+    <string name="country">Pais</string>
+    <string name="state">Estado</string>
+    <string name="colonia">Colonia</string>
+    <string name="cp">Codigo postal</string>
+    <string name="back">Regresar</string>
+    <string name="save">Guardar</string>
+    <string name="oficio">Oficio</string>
+    <string name="certif">Certificaciones</string>
+    <string name="terminos">Acepto terminos y condiciones</string>
+    <string name="albanil">Albañil</string>
+    <string name="electricista">Electricista</string>
+    <string name="plomero">Plomero</string>
+    <string name="instalador">Instalador</string>
+    <string name="distribuidor">Distribuidor</string>
+    <string name="subdistribuidor">Subdistribuidor</string>
+    <string name="otro">Otro</string>
+    <string name="add">Agregar</string>
+    <string name="profile">Mi perfil</string>
+    <string name="resources">Banco de recursos</string>
+    <string name="jobs">Mis trabajos</string>
+    <string name="buy">Donde comprar</string>
+    <string name="chamba">Chamba</string>
+    <string name="events">Eventos</string>
+    <string name="ehelp">E911</string>
+    <string name="expirence">Experiencia</string>
+    <string name="into">Entrar</string>
+    <string name="registro">Registro</string>
+    <string name="forgotUser">Recuperar Usuario</string>
+    <string name="close">Salir</string>
+    <string name="save_update">Enviar y actualizar</string>
+    <string name="ok">Listo</string>
+    <string name="year">Año</string>
+    <string name="month">Mes</string>
+    <string name="day">Dia</string>
+    <string name="cotizador">Cotizador de trabajos</string>
+    <string name="manuales">Manuales</string>
+    <string name="videos">Videos</string>
+    <string name="tips">Tips</string>
+    <string name="dosificador">Dosificador</string>
+
+
+    <string name="tipDescrip"> La cimentación de una casa, o de cualquier tipo de edificación es una de las partes estructurales mas importantes de la misma, tanto así que se ...</string>
+    <string name="newCoti">Nueva Cotizacion</string>
+    <string name="prevCoti">Cotizaciones Previas</string>
+    <string name="tarjetas">Tarjetas de Presentación</string>
+    <string name="busqueda">Búsqueda de Trabajo</string>
+    <string name="events_conffir">Eventos a los que asistiré</string>
+    <string name="events_dispo">Eventos disponibles</string>
+    <string name="cliente">Datos del Cliente</string>
+    <string name="avisoCliente">La cotización se emitirá a tu nombre con tus datos de perfil</string>
+    <string name="nameCliente">Nombre del Cliente</string>
+    <string name="phoneCliente">Telefono del CLiente</string>
+    <string name="adressCliente">Dirección del Cliente</string>
+    <string name="trabajador">Datos del Trabajador</string>
+    <string name="trabajado">Datos del Trabajo</string>
+    <string name="nameTrabajo">Tipo de Trabajo</string>
+    <string name="adressTrabajo">Direccion del Trabajo</string>
+    <string name="timeTrabajo">Duraciuon del Trabajo (En Dias)</string>
+    <string name="addMaterial">Agregar Material</string>
+    <string name="materiales">Materiales a Utilizar</string>
+    <string name="material">Material</string>
+    <string name="cost">Precio</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="costos">Costos del Trabajador Por Dia</string>
+    <string name="mano_obra">Mano de Obra</string>
+    <string name="alimentos">Alimentos</string>
+    <string name="gastosIndirect">Gastos Indirectos</string>
+    <string name="consumibles">Consumibles</string>
+    <string name="ganancia">% de Ganancia</string>
+    <string name="resultiCoti">Resultado de la Cotizacion</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="total">Total</string>
+    <string name="verCoti">Ver Cotizacion</string>
+    <string name="download">Descargar</string>
+    <string name="send">Enviar</string>
+    <string name="favorito">Favoritos</string>
+    <string name="myFavorito">Mis Favoritos</string>
+    <string name="descripJob">Colocacion de Piso \nFrancisco #57</string>
+    <string name="myCatalogo">Mi Catalogo</string>
+    <string name="newJob">Crear Nuevo</string>
+    <string name="desJob">Descripcion del Trabajo</string>
+    <string name="date">Fecha</string>
+    <string name="site">Lugar</string>
+    <string name="addCatalogo">Agregar a mi catalogo</string>
+    <string name="jobsTitleView">Colocacion de Piso Francisco #57 Col.</string>
+
+    <string-array name="oficios">
+        <item>Albañil</item>
+        <item>Plomero</item>
+        <item>Electricista</item>
+        <item>Instalador</item>
+        <item>Distribuidor</item>
+        <item>Subdistribuidor</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

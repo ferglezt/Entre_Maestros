@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.testcomp.marango.elementia.MainActivity"
+    android:background="@mipmap/background_limpio">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/imageLoginWidth"
+        android:layout_height="@dimen/imageLoginHeight"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@mipmap/entremaestros_vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginCenter"
+        android:background="@drawable/background_gray"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginTop="@dimen/marginVertical"
+            android:gravity="center"
+            android:text="@string/logIn"
+            android:textSize="@dimen/titleTextSize"
+            android:textStyle="bold"
+            fontPath="fonts/flama_condensed_bold.otf"
+            tools:ignore="MissingPrefix" />
+
+        <EditText
+            android:id="@+id/log_userName"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginTop="@dimen/margin_between_elements"
+            android:background="@drawable/background_edittext"
+            android:hint="@string/user"
+            android:inputType="textEmailAddress"
+            android:textSize="@dimen/textInfoEditSize"
+            fontPath="fonts/flama_condensed_basic.otf"
+            tools:ignore="MissingPrefix"/>
+
+        <EditText
+            android:id="@+id/log_pass"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/background_edittext"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            fontPath="fonts/flama_condensed_bold.otf"
+            tools:ignore="MissingPrefix"
+            android:textSize="@dimen/textInfoEditSize"/>
+
+        <CheckBox
+            android:id="@+id/log_remember"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginVertical="@dimen/margin_between_elements"
+            android:text="@string/remember"
+            fontPath="fonts/flama_condensed_basic.otf"
+            tools:ignore="MissingPrefix"
+            android:textColor="@color/colorLoginInf"
+            android:button="@drawable/background_checkbox"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginCenter"
+        android:background="@drawable/background_gray_inf"
+        android:gravity="center"
+        android:padding="@dimen/margin_between_elements">
+
+        <Button
+            android:id="@+id/log_btnIniciar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:backgroundTint="@color/colorButtonOrange"
+            android:paddingHorizontal="40dp"
+            android:text="@string/into"
+            android:textAllCaps="true"
+            android:textColor="@color/colorEdit"
+            android:textStyle="bold"
+            fontPath="fonts/flama_condensed_bold.otf"
+            tools:ignore="MissingPrefix"
+            android:textSize="@dimen/textButtonSize"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/log_btnHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginHorizontal"
+        android:layout_marginVertical="@dimen/margin_between_elements"
+        android:text="@string/helpPass"
+        fontPath="fonts/flama_condensed_bold.otf"
+        tools:ignore="MissingPrefix" />
+
+    <Button
+        android:id="@+id/log_btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/marginHorizontal"
+        android:layout_marginVertical="@dimen/marginVertical"
+        android:backgroundTint="@color/colorLoginInf"
+        android:paddingHorizontal="@dimen/marginHorizontal"
+        android:text="@string/newUser"
+        android:textAllCaps="true"
+        android:textColor="@color/colorEdit"
+        android:textSize="@dimen/textButtonSize"
+        fontPath="fonts/flama_condensed_bold.otf"
+        tools:ignore="MissingPrefix" />
+
+    <ImageView
+        android:id="@+id/image_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_marginBottom="@dimen/marginVertical"
+        android:src="@mipmap/banner_marcas"
+        android:layout_alignParentBottom="true"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

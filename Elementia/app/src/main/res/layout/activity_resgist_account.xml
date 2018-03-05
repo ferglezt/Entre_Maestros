@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.testcomp.marango.elementia.ResgistAccount"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@mipmap/background_herramientas">
+    <LinearLayout
+        android:id="@+id/popBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgorundPopUp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:elevation="2dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginVertical="@dimen/marginVertical">
+        <ImageButton
+            android:id="@+id/regis_btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/imageBarWidth"
+            android:layout_height="@dimen/imageBarHeight"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/entremaestros_horizontal"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+        <ViewFlipper
+            android:id="@+id/registContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="@dimen/marginVertical"
+            android:elevation="5dp">
+            <include layout="@layout/account_info_user"/>
+        </ViewFlipper>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_viewDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray"
+            android:elevation="1dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/marginHorizontal"
+                android:text="@string/birthDate"
+                android:textSize="@dimen/titleTextSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:text="@string/day"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner_day"
+                        android:layout_width="@dimen/spinnerWidth"
+                        android:layout_height="@dimen/spinnerHeigth"
+                        android:layout_margin="@dimen/marginVertical"
+                        android:background="@drawable/background_spinner" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:text="@string/month"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner_month"
+                        android:layout_width="@dimen/spinnerWidth"
+                        android:layout_height="@dimen/spinnerHeigth"
+                        android:layout_margin="@dimen/marginVertical"
+                        android:background="@drawable/background_spinner" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:text="@string/year"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner_year"
+                        android:layout_width="@dimen/spinnerWidth"
+                        android:layout_height="@dimen/spinnerHeigth"
+                        android:layout_margin="@dimen/marginVertical"
+                        android:background="@drawable/background_spinner"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray_inf"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/date_close_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorButtonOrange"
+                android:paddingHorizontal="40dp"
+                android:text="@string/ok"
+                android:textColor="@color/colorEdit"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

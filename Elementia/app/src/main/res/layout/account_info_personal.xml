@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/account_viewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/marginVertical"
+                android:text="@string/newUser"
+                android:textAllCaps="false"
+                android:textSize="@dimen/titleTextSize"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/account_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_between_elements"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginVertical="@dimen/margin_between_elements"
+                android:background="@drawable/background_edittext"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:textStyle="bold" />
+
+
+            <Spinner
+                android:id="@+id/spinner_country"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinnerHeigth"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginVertical="@dimen/marginVertical_form"
+                android:autofillHints="@string/country"
+                android:background="@drawable/background_spinner"
+                android:gravity="center_vertical" />
+
+            <Spinner
+                android:id="@+id/spinner_state"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinnerHeigth"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginVertical="@dimen/marginVertical_form"
+                android:autofillHints="@string/country"
+                android:background="@drawable/background_spinner"
+                android:gravity="center_vertical" />
+
+            <Spinner
+                android:id="@+id/spinner_colonia"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinnerHeigth"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginVertical="@dimen/marginVertical_form"
+                android:autofillHints="@string/country"
+                android:background="@drawable/background_spinner"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/account_cp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginVertical="@dimen/marginVertical_form"
+                android:background="@drawable/background_edittext"
+                android:hint="@string/cp"
+                android:inputType="number"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray_inf"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/account_btn_personal_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginTop="@dimen/marginVertical"
+                android:layout_marginVertical="@dimen/margin_between_elements"
+                android:backgroundTint="@color/colorButtonOrange"
+                android:paddingHorizontal="@dimen/marginCenter"
+                android:text="@string/next"
+                android:textAllCaps="true"
+                android:textColor="@color/colorEdit"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+<!--
+        <Button
+            android:id="@+id/account_btn_personal_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:layout_marginTop="@dimen/marginCenter"
+            android:backgroundTint="@color/colorLoginInf"
+            android:paddingHorizontal="@dimen/marginCenter"
+            android:text="@string/back"
+            android:textAllCaps="true"
+            android:textColor="@color/colorEdit"
+            android:textStyle="bold" />-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/account_viewDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray"
+            android:elevation="1dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/marginHorizontal"
+                android:text="@string/birthDate"
+                android:textSize="@dimen/titleTextSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/day"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:textStyle="bold"/>
+                    <Spinner
+                        android:id="@+id/spinner_day"
+                        android:layout_width="@dimen/spinnerWidth"
+                        android:layout_height="@dimen/spinnerHeigth"
+                        android:layout_margin="@dimen/marginVertical"
+                        android:background="@drawable/background_spinner" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/month"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:textStyle="bold"/>
+                    <Spinner
+                        android:id="@+id/spinner_month"
+                        android:layout_width="@dimen/spinnerWidth"
+                        android:layout_height="@dimen/spinnerHeigth"
+                        android:layout_margin="@dimen/marginVertical"
+                        android:background="@drawable/background_spinner" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/year"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:textStyle="bold"/>
+                    <Spinner
+                        android:id="@+id/spinner_year"
+                        android:layout_width="@dimen/spinnerWidth"
+                        android:layout_height="@dimen/spinnerHeigth"
+                        android:layout_margin="@dimen/marginVertical"
+                        android:background="@drawable/background_spinner"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray_inf"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/date_close_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorButtonOrange"
+                android:paddingHorizontal="40dp"
+                android:text="@string/ok"
+                android:textColor="@color/colorEdit"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

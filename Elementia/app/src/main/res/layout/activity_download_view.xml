@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.testcomp.marango.elementia.DownloadView"
+    android:orientation="vertical"
+    android:background="@mipmap/background_herramientas">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:background="@android:color/transparent">
+        <ImageButton
+            android:id="@+id/down_btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/imageBarWidth"
+            android:layout_height="@dimen/imageBarHeight"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/entremaestros_horizontal" />
+
+        <ImageButton
+            android:id="@+id/profile_btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/help_circle" />
+    </RelativeLayout>
+    <ViewFlipper
+        android:id="@+id/downdloadView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/download_manuales"/>
+
+    </ViewFlipper>
+
+</LinearLayout>

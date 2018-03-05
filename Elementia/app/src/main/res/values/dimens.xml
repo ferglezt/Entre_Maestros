@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="titleTextSize">28sp</dimen>
+
+    <dimen name="marginCenter">30dp</dimen>
+    <dimen name="marginHorizontal">20dp</dimen>
+    <dimen name="marginVertical">20dp</dimen>
+    <dimen name="marginVertical_form">10dp</dimen>
+    <dimen name="margin_between_elements">5dp</dimen>
+
+    <dimen name="imageBarWidth">150dp</dimen>
+    <dimen name="imageBarHeight">50dp</dimen>
+    <dimen name="imageLoginWidth">250dp</dimen>
+    <dimen name="imageLoginHeight">200dp</dimen>
+
+    <dimen name="textButtonSize">25sp</dimen>
+    <dimen name="textInfoSize">20sp</dimen>
+    <dimen name="textInfoEditSize">22sp</dimen>
+
+    <dimen name="spinnerWidth">150dp</dimen>
+    <dimen name="spinnerHeigth">28dp</dimen>
+
+    <dimen name="icWidthMenu">30dp</dimen>
+    <dimen name="icHeigthMenu">30dp</dimen>
+    <dimen name="imagePaddingMenu">2dp</dimen>
+    <dimen name="imageMargingMenu">15dp</dimen>
+    <dimen name="paddingBtnMenu">60dp</dimen>
+
+
+    <!-- Drawables dimens -->
+    <dimen name="radius_button">15dp</dimen>
+    <dimen name="iconElevation">8dp</dimen>
+
+</resources>

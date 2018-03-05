@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.testcomp.marango.elementia.Help"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:background="@android:color/transparent">
+        <ImageButton
+            android:id="@+id/profile_btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/imageBarWidth"
+            android:layout_height="@dimen/imageBarHeight"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/entremaestros_horizontal" />
+
+        <ImageButton
+            android:id="@+id/profile_btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/help_circle" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtonBlue"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/nueveonce"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ehelp"
+            android:textColor="@color/colorEdit"
+            android:textStyle="bold"
+            android:textSize="@dimen/titleTextSize"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom"
+        android:layout_gravity="center_vertical"
+        android:paddingBottom="@dimen/marginCenter">
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edit_menssage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonBlue"
+            android:hint="Escribir Mensaje"
+            android:textColor="@color/colorEdit"
+            android:padding="10dp"
+            android:layout_marginLeft="@dimen/marginHorizontal"/>
+        <Button
+            android:layout_weight="1.9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorButtonOrange"
+            android:text="@string/send"
+            android:textColor="@color/colorEdit"
+            android:textSize="@dimen/textButtonSize"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

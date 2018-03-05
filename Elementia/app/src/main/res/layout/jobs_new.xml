@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_herramientas"
+    android:orientation="vertical"
+    tools:context="com.testcomp.marango.elementia.Jobs">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtonBlue"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/crear_nuevo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:text="@string/newJob"
+            android:textColor="@color/colorEdit"
+            android:textSize="@dimen/titleTextSize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:layout_marginVertical="@dimen/marginVertical_form">
+
+                <ImageButton
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/backgroun_button_image"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/subir_catalogo"
+                    android:layout_marginHorizontal="2dp"/>
+                <ImageButton
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/backgroun_button_image"
+                    android:cropToPadding="false"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/subir_catalogo"
+                    android:layout_marginHorizontal="2dp"/>
+                <ImageButton
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/backgroun_button_image"
+                android:cropToPadding="false"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/subir_catalogo"
+                    android:layout_marginHorizontal="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray"
+            android:orientation="vertical">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_edittext"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:layout_marginTop="@dimen/marginVertical_form"
+                        android:textStyle="bold"
+                        android:hint="@string/nameTrabajo"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:layout_marginTop="@dimen/marginVertical_form"
+                        android:text="@string/desJob"
+                        />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:background="@drawable/background_edittext"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:layout_marginTop="@dimen/marginVertical_form"
+                        android:textStyle="bold"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_edittext"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:layout_marginTop="@dimen/marginVertical_form"
+                        android:textStyle="bold"
+                        android:hint="@string/site"/>
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/background_edittext"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:layout_marginVertical="@dimen/marginVertical_form"
+                        android:textStyle="bold"
+                        android:hint="@string/date"/>
+                    <CheckBox
+                        android:id="@+id/log_remember"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:layout_marginVertical="@dimen/marginVertical_form"
+                        android:text="@string/addCatalogo"
+                        fontPath="fonts/flama_condensed_basic.otf"
+                        tools:ignore="MissingPrefix"
+                        android:textColor="@color/colorLoginInf"
+                        android:button="@drawable/background_checkbox"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray_inf"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/marginHorizontal"
+                android:backgroundTint="@color/colorButtonOrange"
+                android:text="@string/next"
+                android:textColor="@color/colorEdit"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

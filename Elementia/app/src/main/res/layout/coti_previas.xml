@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtonBlue"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/cotizaciones_previas"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/prevCoti"
+            android:textColor="@color/colorEdit"
+            android:textStyle="bold"
+            android:textSize="@dimen/titleTextSize"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            />
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginTop="@dimen/marginVertical_form"
+                android:background="@drawable/button_blue"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/equis"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:text="Cotizacion de chiapas"
+                    android:textColor="@color/colorEdit"
+                    android:textSize="@dimen/textInfoEditSize"
+                    android:layout_marginHorizontal="40dp"/>
+
+                <ImageButton
+                    android:id="@+id/coti_btn_editCoti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="false"
+                    android:backgroundTint="@android:color/transparent"
+                    android:cropToPadding="false"
+                    android:src="@drawable/pencil_circle_outline" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginTop="@dimen/marginVertical_form"
+                android:background="@drawable/button_blue"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/equis"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:text="Cotizacion de chiapas"
+                    android:textColor="@color/colorEdit"
+                    android:textSize="@dimen/textInfoEditSize"
+                    android:layout_marginHorizontal="40dp"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="false"
+                    android:backgroundTint="@android:color/transparent"
+                    android:cropToPadding="false"
+                    android:src="@drawable/pencil_circle_outline" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginTop="@dimen/marginVertical_form"
+                android:background="@drawable/button_blue"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/equis"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:text="Cotizacion de chiapas"
+                    android:textColor="@color/colorEdit"
+                    android:textSize="@dimen/textInfoEditSize"
+                    android:layout_marginHorizontal="40dp"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="false"
+                    android:backgroundTint="@android:color/transparent"
+                    android:cropToPadding="false"
+                    android:src="@drawable/pencil_circle_outline" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginTop="@dimen/marginVertical_form"
+                android:background="@drawable/button_blue"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/equis"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:text="Cotizacion de chiapas"
+                    android:textColor="@color/colorEdit"
+                    android:textSize="@dimen/textInfoEditSize"
+                    android:layout_marginHorizontal="40dp"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="false"
+                    android:backgroundTint="@android:color/transparent"
+                    android:cropToPadding="false"
+                    android:src="@drawable/pencil_circle_outline" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginTop="@dimen/marginVertical_form"
+                android:background="@drawable/button_blue"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/equis"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:text="Cotizacion de chiapas"
+                    android:textColor="@color/colorEdit"
+                    android:textSize="@dimen/textInfoEditSize"
+                    android:layout_marginHorizontal="40dp"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="false"
+                    android:backgroundTint="@android:color/transparent"
+                    android:cropToPadding="false"
+                    android:src="@drawable/pencil_circle_outline" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginTop="@dimen/marginVertical_form"
+                android:background="@drawable/button_blue"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/equis"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:text="Cotizacion de chiapas"
+                    android:textColor="@color/colorEdit"
+                    android:textSize="@dimen/textInfoEditSize"
+                    android:layout_marginHorizontal="40dp"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="false"
+                    android:backgroundTint="@android:color/transparent"
+                    android:cropToPadding="false"
+                    android:src="@drawable/pencil_circle_outline" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginTop="@dimen/marginVertical_form"
+                android:background="@drawable/button_blue"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentStart="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/equis"
+                    android:layout_centerInParent="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:background="@android:color/transparent"
+                    android:text="Cotizacion de chiapas"
+                    android:textColor="@color/colorEdit"
+                    android:textSize="@dimen/textInfoEditSize"
+                    android:layout_marginHorizontal="40dp"/>
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:adjustViewBounds="false"
+                    android:backgroundTint="@android:color/transparent"
+                    android:cropToPadding="false"
+                    android:src="@drawable/pencil_circle_outline" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+</LinearLayout>

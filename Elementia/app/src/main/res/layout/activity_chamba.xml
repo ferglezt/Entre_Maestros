@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.testcomp.marango.elementia.Chamba"
+    android:background="@mipmap/background_palita">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:background="@android:color/transparent"
+        android:layout_marginVertical="@dimen/marginVertical">
+        <ImageButton
+            android:id="@+id/chamba_btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/imageBarWidth"
+            android:layout_height="@dimen/imageBarHeight"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/entremaestros_horizontal" />
+
+        <ImageButton
+            android:id="@+id/profile_btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/help_circle" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtonBlue"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/chamba"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chamba"
+            android:textColor="@color/colorEdit"
+            android:textStyle="bold"
+            android:textSize="@dimen/titleTextSize"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@mipmap/img_chamba" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/home_btn_porfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:alpha="0.9"
+                android:backgroundTint="@color/colorButtonBlue"
+                android:paddingLeft="@dimen/paddingBtnMenu"
+                android:text="@string/tarjetas"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorEdit"
+                android:textSize="@dimen/textButtonSize" />
+            <ImageView
+                android:layout_width="@dimen/icWidthMenu"
+                android:layout_height="@dimen/icHeigthMenu"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="@dimen/imagePaddingMenu"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/tarjetas"
+                android:elevation="@dimen/iconElevation"
+                android:layout_alignLeft="@id/home_btn_porfile"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/imageMargingMenu"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/home_btn_resources"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:alpha="0.9"
+                android:backgroundTint="@color/colorButtonBlue"
+                android:paddingLeft="@dimen/paddingBtnMenu"
+                android:text="@string/busqueda"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorEdit"
+                android:textSize="@dimen/textButtonSize" />
+            <ImageView
+                android:layout_width="@dimen/icWidthMenu"
+                android:layout_height="@dimen/icHeigthMenu"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="@dimen/imagePaddingMenu"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/busco_chamba"
+                android:elevation="@dimen/iconElevation"
+                android:layout_alignLeft="@id/home_btn_resources"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/imageMargingMenu"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

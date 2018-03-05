@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/account_viewInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/contentSup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/marginVertical"
+                android:text="@string/newUser"
+                android:textAllCaps="false"
+                android:textSize="@dimen/titleTextSize"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/account_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_between_elements"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:background="@drawable/background_edittext"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/account_lastname1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginVertical="@dimen/marginVertical_form"
+                android:background="@drawable/background_edittext"
+                android:hint="@string/ape_paterno"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/account_lastname2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginVertical="@dimen/marginVertical_form"
+                android:background="@drawable/background_edittext"
+                android:hint="@string/ape_materno"
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/account_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginTop="@dimen/margin_between_elements"
+                android:background="@drawable/background_edittext"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/account_birth"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/spinnerHeigth"
+                android:layout_marginBottom="20dp"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:layout_marginVertical="@dimen/marginVertical_form"
+                android:background="@drawable/background_edittext"
+                android:gravity="center_vertical"
+                android:hint="@string/birthDate"
+                android:inputType="date"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/contentInf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contentSup"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray_inf"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/account_btn_info_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="@dimen/margin_between_elements"
+                android:backgroundTint="@color/colorButtonOrange"
+                android:paddingHorizontal="@dimen/marginCenter"
+                android:text="@string/next"
+                android:textAllCaps="true"
+                android:textColor="@color/colorEdit"
+                android:textStyle="bold" />
+        </LinearLayout>
+<!--
+        <Button
+            android:id="@+id/account_btn_info_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="@dimen/marginCenter"
+            android:backgroundTint="@color/colorLoginInf"
+            android:paddingHorizontal="@dimen/marginCenter"
+            android:text="@string/cancel"
+            android:textAllCaps="true"
+            android:textColor="@color/colorEdit"
+            android:textStyle="bold" />
+            -->
+    </LinearLayout>
+
+    <!--
+    <LinearLayout
+        android:id="@+id/account_viewDate"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:elevation="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray"
+            android:elevation="1dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginVertical="@dimen/marginHorizontal"
+                android:text="@string/birthDate"
+                android:textSize="@dimen/titleTextSize"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:text="@string/day"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner_day"
+                        android:layout_width="@dimen/spinnerWidth"
+                        android:layout_height="@dimen/spinnerHeigth"
+                        android:layout_margin="@dimen/marginVertical"
+                        android:background="@drawable/background_spinner" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:text="@string/month"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner_month"
+                        android:layout_width="@dimen/spinnerWidth"
+                        android:layout_height="@dimen/spinnerHeigth"
+                        android:layout_margin="@dimen/marginVertical"
+                        android:background="@drawable/background_spinner" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/marginHorizontal"
+                        android:text="@string/year"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinner_year"
+                        android:layout_width="@dimen/spinnerWidth"
+                        android:layout_height="@dimen/spinnerHeigth"
+                        android:layout_margin="@dimen/marginVertical"
+                        android:background="@drawable/background_spinner"
+                        android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray_inf"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/date_close_popup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorButtonOrange"
+                android:paddingHorizontal="40dp"
+                android:text="@string/ok"
+                android:textColor="@color/colorEdit"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout> -->
+</RelativeLayout>

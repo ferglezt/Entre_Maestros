@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/background_herramientas"
+    android:orientation="vertical"
+    tools:context="com.testcomp.marango.elementia.Jobs">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginVertical="@dimen/marginVertical"
+        android:background="@android:color/transparent">
+
+        <ImageButton
+            android:id="@+id/jobs_btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/menu" />
+
+        <ImageView
+            android:layout_width="@dimen/imageBarWidth"
+            android:layout_height="@dimen/imageBarHeight"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/entremaestros_horizontal" />
+
+        <ImageButton
+            android:id="@+id/profile_btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/help_circle" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/viewJobs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorButtonBlue"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/trabajos" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:text="@string/jobs"
+                android:textColor="@color/colorEdit"
+                android:textSize="@dimen/titleTextSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/margin_between_elements"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/equis" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/trabajo_icono" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:src="@drawable/star_circle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="@string/descripJob" />
+
+                        <ImageView
+                            android:id="@+id/job_btnEdit"
+                            android:layout_width="25dp"
+                            android:layout_height="@dimen/icHeigthMenu"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/editargris" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/margin_between_elements"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/equis" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/trabajo_icono" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:src="@drawable/star_circle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="@string/descripJob" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="@dimen/icHeigthMenu"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/editargris" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/margin_between_elements"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/equis" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/trabajo_icono" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:src="@drawable/star_circle" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="@string/descripJob" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="@dimen/icHeigthMenu"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/editargris" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/margin_between_elements"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/equis" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/trabajo_icono" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:src="@drawable/star_circle"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="@string/descripJob" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="@dimen/icHeigthMenu"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/editargris" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="@dimen/margin_between_elements"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/equis" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/trabajo_icono" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginHorizontal="1dp"
+                            android:src="@drawable/star_circle"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:text="@string/descripJob" />
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="@dimen/icHeigthMenu"
+                            android:layout_marginHorizontal="5dp"
+                            android:src="@mipmap/editargris" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginCenter"
+            android:background="@drawable/background_gray_inf"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/job_btnCatalogo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginHorizontal"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorButtonOrange"
+                android:text="@string/myCatalogo"
+                android:textColor="@color/colorEdit"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/job_btnNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/marginHorizontal"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorButtonOrange"
+                android:text="@string/newJob"
+                android:textColor="@color/colorEdit"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/jobs_actions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include layout="@layout/jobs_view_info" />
+    </ViewFlipper>
+
+
+</LinearLayout>

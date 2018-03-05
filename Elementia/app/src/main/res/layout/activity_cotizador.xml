@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.testcomp.marango.elementia.Cotizador"
+    android:orientation="vertical"
+    android:background="@mipmap/background_palita">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:background="@android:color/transparent"
+        android:layout_marginVertical="@dimen/marginVertical">
+        <ImageButton
+            android:id="@+id/coti_btn_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:backgroundTint="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            />
+
+        <ImageView
+            android:layout_width="@dimen/imageBarWidth"
+            android:layout_height="@dimen/imageBarHeight"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/entremaestros_horizontal" />
+
+        <ImageButton
+            android:id="@+id/profile_btn_help"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/help_circle" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/coti_viewOptions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorButtonBlue"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:gravity="center"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/cotizador"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cotizador"
+            android:textColor="@color/colorEdit"
+            android:textStyle="bold"
+            android:textSize="@dimen/titleTextSize"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            fontPath="fonts/flama_condensed_basic.otf"
+            tools:ignore="MissingPrefix" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <Button
+                android:id="@+id/coti_btn_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:alpha="0.9"
+                android:backgroundTint="@color/colorButtonBlue"
+                android:paddingLeft="@dimen/paddingBtnMenu"
+                android:text="@string/newCoti"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorEdit"
+                android:textSize="@dimen/textButtonSize"
+                fontPath="fonts/flama_condensed_basic.otf"
+                tools:ignore="MissingPrefix" />
+            <ImageView
+                android:layout_width="@dimen/icWidthMenu"
+                android:layout_height="@dimen/icHeigthMenu"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="@dimen/imagePaddingMenu"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/nueva_cotizacion"
+                android:elevation="@dimen/iconElevation"
+                android:layout_alignLeft="@id/coti_btn_new"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/imageMargingMenu"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/coti_btn_prev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/marginHorizontal"
+                android:alpha="0.9"
+                android:backgroundTint="@color/colorButtonBlue"
+                android:paddingLeft="@dimen/paddingBtnMenu"
+                android:text="@string/prevCoti"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="@color/colorEdit"
+                android:textSize="@dimen/textButtonSize"
+                fontPath="fonts/flama_condensed_basic.otf"
+                tools:ignore="MissingPrefix"/>
+            <ImageView
+                android:layout_width="@dimen/icWidthMenu"
+                android:layout_height="@dimen/icHeigthMenu"
+                android:adjustViewBounds="true"
+                android:cropToPadding="true"
+                android:padding="@dimen/imagePaddingMenu"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/cotizaciones_previas"
+                android:elevation="@dimen/iconElevation"
+                android:layout_alignLeft="@id/coti_btn_prev"
+                android:layout_centerVertical="true"
+                android:layout_marginHorizontal="@dimen/imageMargingMenu"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <ViewFlipper
+        android:id="@+id/viewEdit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <include layout="@layout/coti_new_cliente"/>
+
+    </ViewFlipper>
+
+</LinearLayout>
